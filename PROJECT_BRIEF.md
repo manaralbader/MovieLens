@@ -51,6 +51,14 @@ We will manufacture a small synthetic "user updated their rating" batch
 ourselves on Day 2 (a handful of rows) — a disclosed simplification, not a
 shortcut.
 
+Note on Day 4: this project uses **file-based streaming** (drip files into a
+watched folder), not Kafka, even though the course itself uses Kafka. The
+Structured Streaming concepts that matter (checkpointing, incremental reads,
+stop/restart recovery) are identical either way. Running an actual Kafka
+broker would add operational skill (topics, producer/consumer clients) that
+doesn't map onto understanding the lakehouse pattern this project exists to
+verify — a deliberate choice, not a gap.
+
 ## The 5-day plan
 
 | Day | Idea being verified | What gets built |
