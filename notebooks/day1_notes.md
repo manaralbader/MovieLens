@@ -81,10 +81,10 @@ instead of fixing the ones that are actually there (like the missing
 problem to solve here yet — that's why Day 2 will *manufacture* one, on
 purpose, to have something real to practice deduping).
 
-## Step 3 — Write the "why lakehouse" note
+## Step 3 —"Why lakehouse"
 
-Wrote a short paragraph explaining why we're layering Bronze → Silver →
-Gold instead of one cleaning script: **auditability** (every stage is an
+Why we're layering Bronze → Silver →
+Gold instead of one cleaning script?  **auditability** (every stage is an
 inspectable checkpoint) and **reproducibility** (a broken stage can be
 fixed and rerun on its own, without redoing everything, and without needing
 the original source data to still exist).
